@@ -12,48 +12,50 @@ import UIKit
 
 class GameScene: SKScene {
     
-    
-    let triangleNodes = createTriangles()
     let imageView = createImgView()
+    var sequencia = prepareSequence()
     
     override func didMove(to view: SKView) {
         
-        MusicPlayer.shared.play(.intro)
+        print(sequencia)
+        MusicPlayer.shared.play(.intro2)
         
-        for triangleNode in triangleNodes {
-            addChild(triangleNode)
+        for triangle in Model.instance.triangles {
+            addChild(triangle.node)
         }
         
         let circle = createCircle()
         addChild(circle)
         view.addSubview(imageView)
         
+        actionPlay()
+        
+    }
+    
+    func actionPlay() {
+        var delay = 0.0
+        
+        for triangulo in sequencia {
+            run(SKAction.wait(forDuration: delay)) {
+                triangulo.isPlaying()
+                playTriangle(triangulo: triangulo)
+                
+            }
+            delay += 2
+            print("trocou a cor pro modelo")
+        }
+        run(SKAction.wait(forDuration: delay)) {
+        }
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
         
-        for triangle in triangleNodes {
-            if triangle.contains(pos) {
-                let index = triangleNodes.firstIndex(of: triangle)
-                print("triangulo: " , index!)
-                let triangulo = Model.instance.triangles[index!]
-                imageView.image = UIImage(named: triangulo.imagem)
+        for triangle in Model.instance.triangles {
+            if triangle.node.contains(pos) {
+                imageView.image = UIImage(named: triangle.imagem)
+                playTriangle(triangulo: triangle)
                 
-                if triangulo.percussao == true {
-                    var percussao = ["bateria.mp3", "caixa.mp3"]
-                    var fileName = percussao.randomElement()
-                    var sound = CustomAudioPlayer(fileName: fileName!)
-                    sound.play()
-                    print("tocou o som da", fileName)
-                } else {
-                    var sopros = ["E2.mp3", "F#2.mp3", "G#2.mp3", "A2.mp3", "B2.mp3", "C#3.mp3", "D#3.mp3", "E3.mp3"]
-                    
-                    var fileName = triangulo.som + sopros.randomElement()!
-                    var sound = CustomAudioPlayer(fileName: fileName)
-                    sound.play()
-                }
-
                 // função recebe o index, toca o som e dá ótima.
             }
         }

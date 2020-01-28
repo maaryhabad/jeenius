@@ -1,0 +1,55 @@
+//
+//  Mecanica.swift
+//  Jeenius
+//
+//  Created by Mariana Beilune Abad on 28/01/20.
+//  Copyright © 2020 Mariana Beilune Abad. All rights reserved.
+//
+
+import Foundation
+import UIKit
+import SpriteKit
+
+private var sequencia: [Triangle] = []
+private var indice = -1
+private var model = Model.instance.triangles
+var sound: CustomAudioPlayer!
+
+func prepareSequence() -> [Triangle] {
+    let random = model.randomElement()
+    sequencia.append(random!)
+    indice += 1
+    return sequencia
+}
+
+func playTriangle(triangulo: Triangle) {
+    
+    if triangulo.percussao == true {
+        let percussao = ["bateria.mp3", "caixa.mp3"]
+        var fileName: String
+        
+        if triangulo.cor == UIColor(#colorLiteral(red: 0.937254902, green: 0.537254902, blue: 0.9058823529, alpha: 1)) {
+            fileName = percussao[0]
+        } else {
+            fileName = percussao[1]
+        }
+        sound = CustomAudioPlayer(fileName: fileName)
+        
+        sound.play()
+        print("tocou o som da", fileName)
+    } else {
+        let sopros = ["E2.mp3", "F#2.mp3", "G#2.mp3", "A2.mp3", "B2.mp3", "C#3.mp3", "D#3.mp3", "E3.mp3"]
+        var elemento = sopros.randomElement()
+        
+        let fileName = triangulo.som + elemento!
+        print("tocou o som \(elemento) do", triangulo.som)
+       
+        sound = CustomAudioPlayer(fileName: fileName)
+        sound.play()
+    }
+}
+
+
+//checa se a pessoa clicou no certo.
+
+//desativa os triângulos enquanto toca.

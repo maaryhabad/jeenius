@@ -18,14 +18,14 @@
 		CD75B73E23DF934A009059AD /* loop_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B73A23DF934A009059AD /* loop_1.mp3 */; };
 		CD75B73F23DF934A009059AD /* intro_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B73B23DF934A009059AD /* intro_1.mp3 */; };
 		CD75B74023DF934A009059AD /* loop_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B73C23DF934A009059AD /* loop_2.mp3 */; };
-		CD75B74A23DF97CC009059AD /* D#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74223DF97CC009059AD /* D#3.mp3 */; };
-		CD75B74B23DF97CC009059AD /* C#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74323DF97CC009059AD /* C#3.mp3 */; };
-		CD75B74C23DF97CC009059AD /* G#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74423DF97CC009059AD /* G#2.mp3 */; };
-		CD75B74D23DF97CC009059AD /* F#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74523DF97CC009059AD /* F#2.mp3 */; };
-		CD75B74E23DF97CC009059AD /* B2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74623DF97CC009059AD /* B2.mp3 */; };
-		CD75B74F23DF97CC009059AD /* E2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74723DF97CC009059AD /* E2.mp3 */; };
-		CD75B75023DF97CC009059AD /* E3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74823DF97CC009059AD /* E3.mp3 */; };
-		CD75B75123DF97CC009059AD /* A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74923DF97CC009059AD /* A2.mp3 */; };
+		CD75B74A23DF97CC009059AD /* trombone_D#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74223DF97CC009059AD /* trombone_D#3.mp3 */; };
+		CD75B74B23DF97CC009059AD /* trombone_C#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74323DF97CC009059AD /* trombone_C#3.mp3 */; };
+		CD75B74C23DF97CC009059AD /* trombone_G#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74423DF97CC009059AD /* trombone_G#2.mp3 */; };
+		CD75B74D23DF97CC009059AD /* trombone_F#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74523DF97CC009059AD /* trombone_F#2.mp3 */; };
+		CD75B74E23DF97CC009059AD /* trombone_B2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74623DF97CC009059AD /* trombone_B2.mp3 */; };
+		CD75B74F23DF97CC009059AD /* trombone_E2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74723DF97CC009059AD /* trombone_E2.mp3 */; };
+		CD75B75023DF97CC009059AD /* trombone_E3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74823DF97CC009059AD /* trombone_E3.mp3 */; };
+		CD75B75123DF97CC009059AD /* trombone_A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B74923DF97CC009059AD /* trombone_A2.mp3 */; };
 		CD75B75323DF9AF6009059AD /* caixa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B75223DF9AF5009059AD /* caixa.mp3 */; };
 		CD75B75523DF9AFE009059AD /* bateria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B75423DF9AFE009059AD /* bateria.mp3 */; };
 		CDB7D67623D735AB00180AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7D67523D735AB00180AAB /* AppDelegate.swift */; };
@@ -38,6 +38,31 @@
 		CDB7D68623D735AF00180AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB7D68423D735AF00180AAB /* LaunchScreen.storyboard */; };
 		CDB7D69123D735AF00180AAB /* JeeniusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7D69023D735AF00180AAB /* JeeniusTests.swift */; };
 		CDB7D69C23D735AF00180AAB /* JeeniusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7D69B23D735AF00180AAB /* JeeniusUITests.swift */; };
+		CDEB061A23E057130013021F /* sax_E3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061223E057130013021F /* sax_E3.mp3 */; };
+		CDEB061B23E057130013021F /* sax_C#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061323E057130013021F /* sax_C#3.mp3 */; };
+		CDEB061C23E057130013021F /* sax_G#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061423E057130013021F /* sax_G#2.mp3 */; };
+		CDEB061D23E057130013021F /* sax_E2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061523E057130013021F /* sax_E2.mp3 */; };
+		CDEB061E23E057130013021F /* sax_F#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061623E057130013021F /* sax_F#2.mp3 */; };
+		CDEB061F23E057130013021F /* sax_B2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061723E057130013021F /* sax_B2.mp3 */; };
+		CDEB062023E057130013021F /* sax_D#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061823E057130013021F /* sax_D#3.mp3 */; };
+		CDEB062123E057130013021F /* sax_A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB061923E057130013021F /* sax_A2.mp3 */; };
+		CDEB062C23E057860013021F /* trompete_G#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062423E057850013021F /* trompete_G#2.mp3 */; };
+		CDEB062D23E057860013021F /* trompete_D#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062523E057850013021F /* trompete_D#3.mp3 */; };
+		CDEB062E23E057860013021F /* trompete_E2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062623E057850013021F /* trompete_E2.mp3 */; };
+		CDEB062F23E057860013021F /* trompete_E3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062723E057850013021F /* trompete_E3.mp3 */; };
+		CDEB063023E057860013021F /* trompete_A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062823E057850013021F /* trompete_A2.mp3 */; };
+		CDEB063123E057860013021F /* trompete_F#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062923E057860013021F /* trompete_F#2.mp3 */; };
+		CDEB063223E057860013021F /* trompete_C#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062A23E057860013021F /* trompete_C#3.mp3 */; };
+		CDEB063323E057860013021F /* trompete_B2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB062B23E057860013021F /* trompete_B2.mp3 */; };
+		CDEB063C23E057C50013021F /* trompa_B2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063423E057C50013021F /* trompa_B2.mp3 */; };
+		CDEB063D23E057C50013021F /* trompa_F#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063523E057C50013021F /* trompa_F#2.mp3 */; };
+		CDEB063E23E057C50013021F /* trompa_E2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063623E057C50013021F /* trompa_E2.mp3 */; };
+		CDEB063F23E057C50013021F /* trompa_G#2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063723E057C50013021F /* trompa_G#2.mp3 */; };
+		CDEB064023E057C50013021F /* trompa_D#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063823E057C50013021F /* trompa_D#3.mp3 */; };
+		CDEB064123E057C50013021F /* trompa_E3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063923E057C50013021F /* trompa_E3.mp3 */; };
+		CDEB064223E057C50013021F /* trompa_C#3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063A23E057C50013021F /* trompa_C#3.mp3 */; };
+		CDEB064323E057C50013021F /* trompa_A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEB063B23E057C50013021F /* trompa_A2.mp3 */; };
+		CDEB064A23E05E440013021F /* Mecanica.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB064923E05E440013021F /* Mecanica.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,14 +94,14 @@
 		CD75B73A23DF934A009059AD /* loop_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop_1.mp3; sourceTree = "<group>"; };
 		CD75B73B23DF934A009059AD /* intro_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro_1.mp3; sourceTree = "<group>"; };
 		CD75B73C23DF934A009059AD /* loop_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop_2.mp3; sourceTree = "<group>"; };
-		CD75B74223DF97CC009059AD /* D#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "D#3.mp3"; sourceTree = "<group>"; };
-		CD75B74323DF97CC009059AD /* C#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C#3.mp3"; sourceTree = "<group>"; };
-		CD75B74423DF97CC009059AD /* G#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "G#2.mp3"; sourceTree = "<group>"; };
-		CD75B74523DF97CC009059AD /* F#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "F#2.mp3"; sourceTree = "<group>"; };
-		CD75B74623DF97CC009059AD /* B2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B2.mp3; sourceTree = "<group>"; };
-		CD75B74723DF97CC009059AD /* E2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E2.mp3; sourceTree = "<group>"; };
-		CD75B74823DF97CC009059AD /* E3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E3.mp3; sourceTree = "<group>"; };
-		CD75B74923DF97CC009059AD /* A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A2.mp3; sourceTree = "<group>"; };
+		CD75B74223DF97CC009059AD /* trombone_D#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trombone_D#3.mp3"; sourceTree = "<group>"; };
+		CD75B74323DF97CC009059AD /* trombone_C#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trombone_C#3.mp3"; sourceTree = "<group>"; };
+		CD75B74423DF97CC009059AD /* trombone_G#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trombone_G#2.mp3"; sourceTree = "<group>"; };
+		CD75B74523DF97CC009059AD /* trombone_F#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trombone_F#2.mp3"; sourceTree = "<group>"; };
+		CD75B74623DF97CC009059AD /* trombone_B2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trombone_B2.mp3; sourceTree = "<group>"; };
+		CD75B74723DF97CC009059AD /* trombone_E2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trombone_E2.mp3; sourceTree = "<group>"; };
+		CD75B74823DF97CC009059AD /* trombone_E3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trombone_E3.mp3; sourceTree = "<group>"; };
+		CD75B74923DF97CC009059AD /* trombone_A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trombone_A2.mp3; sourceTree = "<group>"; };
 		CD75B75223DF9AF5009059AD /* caixa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caixa.mp3; sourceTree = "<group>"; };
 		CD75B75423DF9AFE009059AD /* bateria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bateria.mp3; sourceTree = "<group>"; };
 		CDB7D67223D735AB00180AAB /* Jeenius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jeenius.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +120,31 @@
 		CDB7D69723D735AF00180AAB /* JeeniusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeeniusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB7D69B23D735AF00180AAB /* JeeniusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeeniusUITests.swift; sourceTree = "<group>"; };
 		CDB7D69D23D735AF00180AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEB061223E057130013021F /* sax_E3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sax_E3.mp3; sourceTree = "<group>"; };
+		CDEB061323E057130013021F /* sax_C#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sax_C#3.mp3"; sourceTree = "<group>"; };
+		CDEB061423E057130013021F /* sax_G#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sax_G#2.mp3"; sourceTree = "<group>"; };
+		CDEB061523E057130013021F /* sax_E2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sax_E2.mp3; sourceTree = "<group>"; };
+		CDEB061623E057130013021F /* sax_F#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sax_F#2.mp3"; sourceTree = "<group>"; };
+		CDEB061723E057130013021F /* sax_B2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sax_B2.mp3; sourceTree = "<group>"; };
+		CDEB061823E057130013021F /* sax_D#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sax_D#3.mp3"; sourceTree = "<group>"; };
+		CDEB061923E057130013021F /* sax_A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sax_A2.mp3; sourceTree = "<group>"; };
+		CDEB062423E057850013021F /* trompete_G#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompete_G#2.mp3"; sourceTree = "<group>"; };
+		CDEB062523E057850013021F /* trompete_D#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompete_D#3.mp3"; sourceTree = "<group>"; };
+		CDEB062623E057850013021F /* trompete_E2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompete_E2.mp3; sourceTree = "<group>"; };
+		CDEB062723E057850013021F /* trompete_E3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompete_E3.mp3; sourceTree = "<group>"; };
+		CDEB062823E057850013021F /* trompete_A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompete_A2.mp3; sourceTree = "<group>"; };
+		CDEB062923E057860013021F /* trompete_F#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompete_F#2.mp3"; sourceTree = "<group>"; };
+		CDEB062A23E057860013021F /* trompete_C#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompete_C#3.mp3"; sourceTree = "<group>"; };
+		CDEB062B23E057860013021F /* trompete_B2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompete_B2.mp3; sourceTree = "<group>"; };
+		CDEB063423E057C50013021F /* trompa_B2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompa_B2.mp3; sourceTree = "<group>"; };
+		CDEB063523E057C50013021F /* trompa_F#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompa_F#2.mp3"; sourceTree = "<group>"; };
+		CDEB063623E057C50013021F /* trompa_E2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompa_E2.mp3; sourceTree = "<group>"; };
+		CDEB063723E057C50013021F /* trompa_G#2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompa_G#2.mp3"; sourceTree = "<group>"; };
+		CDEB063823E057C50013021F /* trompa_D#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompa_D#3.mp3"; sourceTree = "<group>"; };
+		CDEB063923E057C50013021F /* trompa_E3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompa_E3.mp3; sourceTree = "<group>"; };
+		CDEB063A23E057C50013021F /* trompa_C#3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trompa_C#3.mp3"; sourceTree = "<group>"; };
+		CDEB063B23E057C50013021F /* trompa_A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trompa_A2.mp3; sourceTree = "<group>"; };
+		CDEB064923E05E440013021F /* Mecanica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mecanica.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +175,9 @@
 		CD75B73823DF9324009059AD /* Sons */ = {
 			isa = PBXGroup;
 			children = (
+				CDEB062323E057670013021F /* trompa */,
+				CDEB062223E057610013021F /* trompete */,
+				CDEB061123E057070013021F /* sax */,
 				CD75B74123DF97C0009059AD /* trombone */,
 				CD75B73B23DF934A009059AD /* intro_1.mp3 */,
 				CD75B73923DF934A009059AD /* intro_2.mp3 */,
@@ -139,14 +192,14 @@
 		CD75B74123DF97C0009059AD /* trombone */ = {
 			isa = PBXGroup;
 			children = (
-				CD75B74923DF97CC009059AD /* A2.mp3 */,
-				CD75B74623DF97CC009059AD /* B2.mp3 */,
-				CD75B74323DF97CC009059AD /* C#3.mp3 */,
-				CD75B74223DF97CC009059AD /* D#3.mp3 */,
-				CD75B74723DF97CC009059AD /* E2.mp3 */,
-				CD75B74823DF97CC009059AD /* E3.mp3 */,
-				CD75B74523DF97CC009059AD /* F#2.mp3 */,
-				CD75B74423DF97CC009059AD /* G#2.mp3 */,
+				CD75B74923DF97CC009059AD /* trombone_A2.mp3 */,
+				CD75B74623DF97CC009059AD /* trombone_B2.mp3 */,
+				CD75B74323DF97CC009059AD /* trombone_C#3.mp3 */,
+				CD75B74223DF97CC009059AD /* trombone_D#3.mp3 */,
+				CD75B74723DF97CC009059AD /* trombone_E2.mp3 */,
+				CD75B74823DF97CC009059AD /* trombone_E3.mp3 */,
+				CD75B74523DF97CC009059AD /* trombone_F#2.mp3 */,
+				CD75B74423DF97CC009059AD /* trombone_G#2.mp3 */,
 			);
 			path = trombone;
 			sourceTree = "<group>";
@@ -174,23 +227,12 @@
 		CDB7D67423D735AB00180AAB /* Jeenius */ = {
 			isa = PBXGroup;
 			children = (
+				CDEB064623E05C660013021F /* Controller */,
+				CDEB064523E05C610013021F /* View */,
+				CDEB064423E05C5C0013021F /* Model */,
 				CD75B73823DF9324009059AD /* Sons */,
 				CDB7D67523D735AB00180AAB /* AppDelegate.swift */,
-				CDB7D67723D735AB00180AAB /* GameScene.sks */,
-				CDB7D67923D735AB00180AAB /* Actions.sks */,
-				CDB7D67B23D735AB00180AAB /* GameScene.swift */,
-				CDB7D67D23D735AB00180AAB /* GameViewController.swift */,
-				CDB7D67F23D735AB00180AAB /* Main.storyboard */,
-				CDB7D68223D735AF00180AAB /* Assets.xcassets */,
-				CDB7D68423D735AF00180AAB /* LaunchScreen.storyboard */,
 				CDB7D68723D735AF00180AAB /* Info.plist */,
-				CD126BAB23DB2CC900CAD338 /* Shapes.swift */,
-				CD126BAD23DB374100CAD338 /* Triangle.swift */,
-				CD126BAF23DB375200CAD338 /* Model.swift */,
-				CD63252F23DF8D2B00A77697 /* MusicWithIntro.swift */,
-				CD63253123DF8D5400A77697 /* Music.swift */,
-				CD63253323DF8D7500A77697 /* CustomAudioPlayer.swift */,
-				CD63253523DF8DAB00A77697 /* MusicPlayer.swift */,
 			);
 			path = Jeenius;
 			sourceTree = "<group>";
@@ -211,6 +253,87 @@
 				CDB7D69D23D735AF00180AAB /* Info.plist */,
 			);
 			path = JeeniusUITests;
+			sourceTree = "<group>";
+		};
+		CDEB061123E057070013021F /* sax */ = {
+			isa = PBXGroup;
+			children = (
+				CDEB061923E057130013021F /* sax_A2.mp3 */,
+				CDEB061723E057130013021F /* sax_B2.mp3 */,
+				CDEB061323E057130013021F /* sax_C#3.mp3 */,
+				CDEB061823E057130013021F /* sax_D#3.mp3 */,
+				CDEB061523E057130013021F /* sax_E2.mp3 */,
+				CDEB061223E057130013021F /* sax_E3.mp3 */,
+				CDEB061623E057130013021F /* sax_F#2.mp3 */,
+				CDEB061423E057130013021F /* sax_G#2.mp3 */,
+			);
+			path = sax;
+			sourceTree = "<group>";
+		};
+		CDEB062223E057610013021F /* trompete */ = {
+			isa = PBXGroup;
+			children = (
+				CDEB062823E057850013021F /* trompete_A2.mp3 */,
+				CDEB062B23E057860013021F /* trompete_B2.mp3 */,
+				CDEB062A23E057860013021F /* trompete_C#3.mp3 */,
+				CDEB062523E057850013021F /* trompete_D#3.mp3 */,
+				CDEB062623E057850013021F /* trompete_E2.mp3 */,
+				CDEB062723E057850013021F /* trompete_E3.mp3 */,
+				CDEB062923E057860013021F /* trompete_F#2.mp3 */,
+				CDEB062423E057850013021F /* trompete_G#2.mp3 */,
+			);
+			path = trompete;
+			sourceTree = "<group>";
+		};
+		CDEB062323E057670013021F /* trompa */ = {
+			isa = PBXGroup;
+			children = (
+				CDEB063B23E057C50013021F /* trompa_A2.mp3 */,
+				CDEB063423E057C50013021F /* trompa_B2.mp3 */,
+				CDEB063A23E057C50013021F /* trompa_C#3.mp3 */,
+				CDEB063823E057C50013021F /* trompa_D#3.mp3 */,
+				CDEB063623E057C50013021F /* trompa_E2.mp3 */,
+				CDEB063923E057C50013021F /* trompa_E3.mp3 */,
+				CDEB063523E057C50013021F /* trompa_F#2.mp3 */,
+				CDEB063723E057C50013021F /* trompa_G#2.mp3 */,
+			);
+			path = trompa;
+			sourceTree = "<group>";
+		};
+		CDEB064423E05C5C0013021F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD126BAD23DB374100CAD338 /* Triangle.swift */,
+				CD126BAF23DB375200CAD338 /* Model.swift */,
+				CD63253523DF8DAB00A77697 /* MusicPlayer.swift */,
+				CD63253323DF8D7500A77697 /* CustomAudioPlayer.swift */,
+				CD63252F23DF8D2B00A77697 /* MusicWithIntro.swift */,
+				CD63253123DF8D5400A77697 /* Music.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDEB064523E05C610013021F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDB7D67923D735AB00180AAB /* Actions.sks */,
+				CDB7D68423D735AF00180AAB /* LaunchScreen.storyboard */,
+				CDB7D67723D735AB00180AAB /* GameScene.sks */,
+				CDB7D67F23D735AB00180AAB /* Main.storyboard */,
+				CDB7D68223D735AF00180AAB /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDEB064623E05C660013021F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDB7D67B23D735AB00180AAB /* GameScene.swift */,
+				CDB7D67D23D735AB00180AAB /* GameViewController.swift */,
+				CDEB064923E05E440013021F /* Mecanica.swift */,
+				CD126BAB23DB2CC900CAD338 /* Shapes.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,23 +440,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEB063F23E057C50013021F /* trompa_G#2.mp3 in Resources */,
+				CDEB063223E057860013021F /* trompete_C#3.mp3 in Resources */,
+				CDEB061E23E057130013021F /* sax_F#2.mp3 in Resources */,
+				CDEB061A23E057130013021F /* sax_E3.mp3 in Resources */,
 				CDB7D68123D735AB00180AAB /* Main.storyboard in Resources */,
-				CD75B74D23DF97CC009059AD /* F#2.mp3 in Resources */,
+				CDEB061D23E057130013021F /* sax_E2.mp3 in Resources */,
+				CD75B74D23DF97CC009059AD /* trombone_F#2.mp3 in Resources */,
+				CDEB062E23E057860013021F /* trompete_E2.mp3 in Resources */,
+				CDEB061B23E057130013021F /* sax_C#3.mp3 in Resources */,
+				CDEB063C23E057C50013021F /* trompa_B2.mp3 in Resources */,
 				CD75B74023DF934A009059AD /* loop_2.mp3 in Resources */,
-				CD75B74B23DF97CC009059AD /* C#3.mp3 in Resources */,
+				CD75B74B23DF97CC009059AD /* trombone_C#3.mp3 in Resources */,
+				CDEB063323E057860013021F /* trompete_B2.mp3 in Resources */,
+				CDEB064323E057C50013021F /* trompa_A2.mp3 in Resources */,
+				CDEB062F23E057860013021F /* trompete_E3.mp3 in Resources */,
 				CD75B73E23DF934A009059AD /* loop_1.mp3 in Resources */,
-				CD75B74F23DF97CC009059AD /* E2.mp3 in Resources */,
-				CD75B74A23DF97CC009059AD /* D#3.mp3 in Resources */,
+				CDEB062C23E057860013021F /* trompete_G#2.mp3 in Resources */,
+				CDEB062D23E057860013021F /* trompete_D#3.mp3 in Resources */,
+				CDEB064123E057C50013021F /* trompa_E3.mp3 in Resources */,
+				CDEB061C23E057130013021F /* sax_G#2.mp3 in Resources */,
+				CD75B74F23DF97CC009059AD /* trombone_E2.mp3 in Resources */,
+				CD75B74A23DF97CC009059AD /* trombone_D#3.mp3 in Resources */,
+				CDEB063D23E057C50013021F /* trompa_F#2.mp3 in Resources */,
 				CD75B75323DF9AF6009059AD /* caixa.mp3 in Resources */,
+				CDEB062123E057130013021F /* sax_A2.mp3 in Resources */,
+				CDEB064223E057C50013021F /* trompa_C#3.mp3 in Resources */,
+				CDEB064023E057C50013021F /* trompa_D#3.mp3 in Resources */,
+				CDEB062023E057130013021F /* sax_D#3.mp3 in Resources */,
 				CDB7D67823D735AB00180AAB /* GameScene.sks in Resources */,
 				CD75B73D23DF934A009059AD /* intro_2.mp3 in Resources */,
+				CDEB061F23E057130013021F /* sax_B2.mp3 in Resources */,
 				CDB7D68323D735AF00180AAB /* Assets.xcassets in Resources */,
+				CDEB063E23E057C50013021F /* trompa_E2.mp3 in Resources */,
+				CDEB063023E057860013021F /* trompete_A2.mp3 in Resources */,
 				CD75B73F23DF934A009059AD /* intro_1.mp3 in Resources */,
-				CD75B74E23DF97CC009059AD /* B2.mp3 in Resources */,
-				CD75B75023DF97CC009059AD /* E3.mp3 in Resources */,
-				CD75B74C23DF97CC009059AD /* G#2.mp3 in Resources */,
-				CD75B75123DF97CC009059AD /* A2.mp3 in Resources */,
+				CD75B74E23DF97CC009059AD /* trombone_B2.mp3 in Resources */,
+				CD75B75023DF97CC009059AD /* trombone_E3.mp3 in Resources */,
+				CD75B74C23DF97CC009059AD /* trombone_G#2.mp3 in Resources */,
+				CD75B75123DF97CC009059AD /* trombone_A2.mp3 in Resources */,
 				CDB7D68623D735AF00180AAB /* LaunchScreen.storyboard in Resources */,
+				CDEB063123E057860013021F /* trompete_F#2.mp3 in Resources */,
 				CDB7D67A23D735AB00180AAB /* Actions.sks in Resources */,
 				CD75B75523DF9AFE009059AD /* bateria.mp3 in Resources */,
 			);
@@ -367,6 +514,7 @@
 				CDB7D67623D735AB00180AAB /* AppDelegate.swift in Sources */,
 				CD63253023DF8D2B00A77697 /* MusicWithIntro.swift in Sources */,
 				CD126BAC23DB2CC900CAD338 /* Shapes.swift in Sources */,
+				CDEB064A23E05E440013021F /* Mecanica.swift in Sources */,
 				CD63253423DF8D7500A77697 /* CustomAudioPlayer.swift in Sources */,
 				CD63253623DF8DAB00A77697 /* MusicPlayer.swift in Sources */,
 				CD63253223DF8D5400A77697 /* Music.swift in Sources */,
