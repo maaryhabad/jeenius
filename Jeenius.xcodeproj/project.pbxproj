@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0DEF7B23E1B48C008CF925 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DEF7A23E1B48C008CF925 /* MenuViewController.swift */; };
+		CD0DEF7E23E1B719008CF925 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0DEF7D23E1B719008CF925 /* GameKit.framework */; };
 		CD126BAC23DB2CC900CAD338 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD126BAB23DB2CC900CAD338 /* Shapes.swift */; };
 		CD126BAE23DB374100CAD338 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD126BAD23DB374100CAD338 /* Triangle.swift */; };
 		CD126BB023DB375200CAD338 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD126BAF23DB375200CAD338 /* Model.swift */; };
@@ -83,6 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0DEF7A23E1B48C008CF925 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CD0DEF7D23E1B719008CF925 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		CD126BAB23DB2CC900CAD338 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		CD126BAD23DB374100CAD338 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		CD126BAF23DB375200CAD338 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0DEF7E23E1B719008CF925 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD0DEF7C23E1B719008CF925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD0DEF7D23E1B719008CF925 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD75B73823DF9324009059AD /* Sons */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +224,7 @@
 				CDB7D68F23D735AF00180AAB /* JeeniusTests */,
 				CDB7D69A23D735AF00180AAB /* JeeniusUITests */,
 				CDB7D67323D735AB00180AAB /* Products */,
+				CD0DEF7C23E1B719008CF925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -332,6 +346,7 @@
 				CDB7D67D23D735AB00180AAB /* GameViewController.swift */,
 				CDEB064923E05E440013021F /* Mecanica.swift */,
 				CD126BAB23DB2CC900CAD338 /* Shapes.swift */,
+				CD0DEF7A23E1B48C008CF925 /* MenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -514,6 +529,7 @@
 				CDB7D67623D735AB00180AAB /* AppDelegate.swift in Sources */,
 				CD63253023DF8D2B00A77697 /* MusicWithIntro.swift in Sources */,
 				CD126BAC23DB2CC900CAD338 /* Shapes.swift in Sources */,
+				CD0DEF7B23E1B48C008CF925 /* MenuViewController.swift in Sources */,
 				CDEB064A23E05E440013021F /* Mecanica.swift in Sources */,
 				CD63253423DF8D7500A77697 /* CustomAudioPlayer.swift in Sources */,
 				CD63253623DF8DAB00A77697 /* MusicPlayer.swift in Sources */,

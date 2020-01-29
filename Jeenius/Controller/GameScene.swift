@@ -14,10 +14,11 @@ class GameScene: SKScene {
     
     let imageView = createImgView()
     var sequencia = prepareSequence()
+    var sequenciaFileName: [String] = []
     
     override func didMove(to view: SKView) {
+        self.backgroundColor = .white
         
-        print(sequencia)
         MusicPlayer.shared.play(.intro2)
         
         for triangle in Model.instance.triangles {
@@ -38,8 +39,10 @@ class GameScene: SKScene {
         for triangulo in sequencia {
             run(SKAction.wait(forDuration: delay)) {
                 triangulo.isPlaying()
-                playTriangle(triangulo: triangulo)
+                var novoFileName = sortSound(triangulo: triangulo)
+                self.sequenciaFileName.append(novoFileName)
                 
+                //tocar a sequência(?)
             }
             delay += 2
             print("trocou a cor pro modelo")
@@ -50,13 +53,21 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
-        
+        // se o triângulo for igual ao triângulo sorteado
+            //toca o mesmo som
+            //dá um ponto
+        // se não
+            // reinicia a sequencia
+            // tirar todos os pontos
         for triangle in Model.instance.triangles {
-            if triangle.node.contains(pos) {
+            if triangle.node.contains(pos) { //sequencia[triangle] == triangle
                 imageView.image = UIImage(named: triangle.imagem)
-                playTriangle(triangulo: triangle)
+                triangle.isPlaying()
                 
-                // função recebe o index, toca o som e dá ótima.
+                for file in sequenciaFileName {
+                    playSound(fileName: file)
+                }
+                
             }
         }
         

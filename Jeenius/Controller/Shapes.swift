@@ -23,6 +23,7 @@ func createImgView() -> UIImageView {
     let image = UIImage(named: "icone.png")
     let imageView = UIImageView(image: image)
     imageView.frame = CGRect(x: 160, y: 400, width: 100, height: 100)
+//    imageView.frame = CGRect(origin: CGPoint(), size: CGSize(width: 100, height: 100))
     
     return imageView
 }

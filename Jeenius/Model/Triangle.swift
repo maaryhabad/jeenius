@@ -43,7 +43,8 @@ public class Triangle {
     }
     
     func isPlaying() {
-        node.fillColor = .black
+
+        node.fillColor = cor.withAlphaComponent(0.3)
         DispatchQueue.main.asyncAfter(
         deadline: .now() + 1.0) {
             self.isWaiting()

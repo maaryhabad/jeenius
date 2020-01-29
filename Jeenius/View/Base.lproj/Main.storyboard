@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="19g-Db-cTj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,16 +7,65 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="4Iz-jy-KnB">
+            <objects>
+                <viewController id="19g-Db-cTj" customClass="MenuViewController" customModule="Jeenius" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uso-MY-WsO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8O-Uv-5LI">
+                                <rect key="frame" x="103.5" y="426.5" width="207" height="53"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Jogar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="wHM-b8-95P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P61-0q-xKX">
+                                <rect key="frame" x="103.5" y="513" width="207" height="53"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.40000000000000002" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Ranking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="T8O-Uv-5LI" firstAttribute="centerY" secondItem="zkz-TD-dPj" secondAttribute="centerY" id="CCi-8X-WjU"/>
+                            <constraint firstItem="P61-0q-xKX" firstAttribute="top" secondItem="T8O-Uv-5LI" secondAttribute="bottom" constant="33.5" id="Gzq-fg-bBs"/>
+                            <constraint firstItem="T8O-Uv-5LI" firstAttribute="centerX" secondItem="zkz-TD-dPj" secondAttribute="centerX" id="Hgv-hZ-wHE"/>
+                            <constraint firstItem="P61-0q-xKX" firstAttribute="centerX" secondItem="T8O-Uv-5LI" secondAttribute="centerX" id="bWL-w7-PZQ"/>
+                            <constraint firstItem="T8O-Uv-5LI" firstAttribute="width" secondItem="uso-MY-WsO" secondAttribute="width" multiplier="0.5" id="ytO-8z-Vnb"/>
+                            <constraint firstItem="P61-0q-xKX" firstAttribute="width" secondItem="T8O-Uv-5LI" secondAttribute="width" id="zZv-Wt-riN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zkz-TD-dPj"/>
+                    </view>
+                    <connections>
+                        <outlet property="play" destination="T8O-Uv-5LI" id="r0o-DL-VfD"/>
+                        <outlet property="ranking" destination="P61-0q-xKX" id="Cjs-DG-ECf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ibg-Zu-JSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708.69565217391312" y="69.642857142857139"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Jeenius" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="GameViewController" customModule="Jeenius" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ivx-kg-l6T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
