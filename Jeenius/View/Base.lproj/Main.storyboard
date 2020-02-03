@@ -10,29 +10,32 @@
         <!--Menu View Controller-->
         <scene sceneID="4Iz-jy-KnB">
             <objects>
-                <viewController id="19g-Db-cTj" customClass="MenuViewController" customModule="Jeenius" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menu" modalPresentationStyle="fullScreen" id="19g-Db-cTj" customClass="MenuViewController" customModule="Jeenius" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uso-MY-WsO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8O-Uv-5LI">
                                 <rect key="frame" x="103.5" y="426.5" width="207" height="53"/>
-                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="Jogar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="wHM-b8-95P"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="Iz8-T7-ffA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P61-0q-xKX">
                                 <rect key="frame" x="103.5" y="513" width="207" height="53"/>
-                                <color key="backgroundColor" red="0.5490196078431373" green="0.40000000000000002" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="Ranking">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="openRanking:" destination="19g-Db-cTj" eventType="touchUpInside" id="lKP-y7-jgj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -47,7 +50,7 @@
                         <viewLayoutGuide key="safeArea" id="zkz-TD-dPj"/>
                     </view>
                     <connections>
-                        <outlet property="play" destination="T8O-Uv-5LI" id="r0o-DL-VfD"/>
+                        <outlet property="play" destination="T8O-Uv-5LI" id="Nfo-al-g4y"/>
                         <outlet property="ranking" destination="P61-0q-xKX" id="Cjs-DG-ECf"/>
                     </connections>
                 </viewController>
@@ -58,7 +61,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="GameViewController" customModule="Jeenius" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameView" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="GameViewController" customModule="Jeenius" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -35,7 +35,7 @@ public class Triangle {
         path.addLine(to: CGPoint(x: toTop[0], y: toTop[1]))
         path.addLine(to: CGPoint(x: base[0], y: base[1]))
         path.addLine(to: CGPoint(x: toBot[0], y: toBot[1]))
-        var triangulo = SKShapeNode(path: path.cgPath)
+        let triangulo = SKShapeNode(path: path.cgPath)
         
         triangulo.fillColor = cor
         triangulo.strokeColor = UIColor.clear
@@ -45,15 +45,14 @@ public class Triangle {
     func isPlaying() {
 
         node.fillColor = cor.withAlphaComponent(0.3)
-        DispatchQueue.main.asyncAfter(
-        deadline: .now() + 1.0) {
+        node.run(SKAction.wait(forDuration: 1.0)){
             self.isWaiting()
         }
     }
     
     func isWaiting() {
         node.fillColor = cor
-        print(cor)
+        //print(cor)
        //voltar pra cor original
     }
 }

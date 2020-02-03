@@ -11,15 +11,28 @@ import UIKit
 import SpriteKit
 
 private var sequencia: [Triangle] = []
-private var indice = -1
+private var indice = 0
 private var model = Model.instance.triangles
-var sound: CustomAudioPlayer!
+private var sound: CustomAudioPlayer!
+
+func resetSequence(){
+    sequencia = []
+    indice = 0
+}
 
 func prepareSequence() -> [Triangle] {
     let random = model.randomElement()
     sequencia.append(random!)
     indice += 1
     return sequencia
+}
+
+func getStringSequence() -> [String]{
+    var aux = [String]()
+    for tri in sequencia{
+        aux.append(tri.imagem)
+    }
+    return aux
 }
 
 func sortSound(triangulo: Triangle) -> String { // sorteia o triângulo

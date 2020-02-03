@@ -10,16 +10,36 @@ import SpriteKit
 import GameplayKit
 import UIKit
 
+protocol GameControllerDelegate: class {
+    func openMenu()
+}
+
 class GameScene: SKScene {
     
-    let imageView = createImgView()
+    weak var gameControllerDelegate : GameControllerDelegate?
+    let instrumentView = createInstrumentImgView()
     var sequencia = prepareSequence()
     var sequenciaFileName: [String] = []
+    var ponteiro = 0
+    var gameViewController = GameViewController()
+    var pause = createButtonPause()
+    
+    
+    enum GameState{
+        case showing
+        case playing
+         
+    }
+    var score:SKLabelNode = SKLabelNode(text: "0")
+    var currentGameStete = GameState.showing
+    var delay = 0.01
+    //variável já tocou - bool
     
     override func didMove(to view: SKView) {
         self.backgroundColor = .white
+        score.fontName = "SFProDisplay-Black"
         
-        MusicPlayer.shared.play(.intro2)
+//        MusicPlayer.shared.play(.intro2)
         
         for triangle in Model.instance.triangles {
             addChild(triangle.node)
@@ -27,48 +47,102 @@ class GameScene: SKScene {
         
         let circle = createCircle()
         addChild(circle)
-        view.addSubview(imageView)
+        addChild(instrumentView)
+//        addChild(pause)
+        
+        score.position = CGPoint(x: -200, y: 450)
+        score.fontColor = .black
+        score.fontSize = 100
+        score.zPosition = 10
+        addChild(score)
+        delay  = 0.0
         
         actionPlay()
         
     }
     
     func actionPlay() {
-        var delay = 0.0
         
+        currentGameStete = GameState.showing
+        ponteiro = 0
+        
+        print("tocou actionPlay \(getStringSequence())")
+        
+        sequenciaFileName = []
         for triangulo in sequencia {
             run(SKAction.wait(forDuration: delay)) {
                 triangulo.isPlaying()
-                var novoFileName = sortSound(triangulo: triangulo)
+                let novoFileName = sortSound(triangulo: triangulo)
                 self.sequenciaFileName.append(novoFileName)
-                
-                //tocar a sequência(?)
+                playSound(fileName: novoFileName)
+                print("play sound: \(self.sequenciaFileName)")
             }
             delay += 2
-            print("trocou a cor pro modelo")
+            print("trocou a cor pro modelo: \(triangulo.som)")
         }
         run(SKAction.wait(forDuration: delay)) {
+            self.currentGameStete = GameState.playing
         }
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
-        // se o triângulo for igual ao triângulo sorteado
-            //toca o mesmo som
-            //dá um ponto
-        // se não
-            // reinicia a sequencia
-            // tirar todos os pontos
-        for triangle in Model.instance.triangles {
-            if triangle.node.contains(pos) { //sequencia[triangle] == triangle
-                imageView.image = UIImage(named: triangle.imagem)
-                triangle.isPlaying()
+        
+        if currentGameStete != .playing{
+            return
+        }
+        
+        if sequencia[ponteiro].node.contains(pos) {
+            
+            if sequencia.count > ponteiro {
+                sequencia[ponteiro].node.fillColor = .green
                 
-                for file in sequenciaFileName {
-                    playSound(fileName: file)
-                }
+                instrumentView.texture = SKTexture(imageNamed: sequencia[ponteiro].imagem)
+//                instrumentView.image = UIImage(named: sequencia[ponteiro].imagem)
+                
+                sequencia[ponteiro].isPlaying()
+                
+                
+                playSound(fileName: sequenciaFileName[ponteiro])
+                
+                
+                
+                gameViewController.pontuacao += 1
+                score.text = "\(gameViewController.pontuacao)"
+                
+                ponteiro += 1
+                
+                //toca o som
+                //dá ponto
+                //sorteia outro triângulo
+            }
+            
+            if sequencia.count == ponteiro {
+                sequencia = prepareSequence()
+                ponteiro = 0
+                playSound(fileName: "acerto.mp3")
+                delay = 1.5
+                actionPlay()
+                MenuViewController.submitScore(score: self.gameViewController.pontuacao)
                 
             }
+            //sorteia outro triângulo se for o último
+        } else {
+            
+            sequencia[ponteiro].node.fillColor = .red
+            run(SKAction.wait(forDuration: 1.0)) {
+                self.sequencia[self.ponteiro].node.fillColor = self.sequencia[self.ponteiro].cor
+                self.ponteiro = 0
+                self.gameViewController.pontuacao = 0
+                self.sequenciaFileName = []
+                resetSequence()
+                playSound(fileName: "erro.mp3")
+                self.sequencia = prepareSequence()
+                self.actionPlay()
+                MenuViewController.submitScore(score: self.gameViewController.pontuacao)
+            }
+            
+            
         }
         
     }
@@ -82,7 +156,11 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+//        if let name = pause.name {
+//            if name == "btn" {
+//                gameControllerDelegate?.openMenu()
+//            }
+//        }
         
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }

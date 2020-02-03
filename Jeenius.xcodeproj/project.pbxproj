@@ -16,6 +16,8 @@
 		CD63253223DF8D5400A77697 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD63253123DF8D5400A77697 /* Music.swift */; };
 		CD63253423DF8D7500A77697 /* CustomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD63253323DF8D7500A77697 /* CustomAudioPlayer.swift */; };
 		CD63253623DF8DAB00A77697 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD63253523DF8DAB00A77697 /* MusicPlayer.swift */; };
+		CD6365FC23E45C12009A53F3 /* erro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD6365FA23E45C12009A53F3 /* erro.mp3 */; };
+		CD6365FD23E45C12009A53F3 /* acerto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD6365FB23E45C12009A53F3 /* acerto.mp3 */; };
 		CD75B73D23DF934A009059AD /* intro_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B73923DF934A009059AD /* intro_2.mp3 */; };
 		CD75B73E23DF934A009059AD /* loop_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B73A23DF934A009059AD /* loop_1.mp3 */; };
 		CD75B73F23DF934A009059AD /* intro_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD75B73B23DF934A009059AD /* intro_1.mp3 */; };
@@ -94,6 +96,8 @@
 		CD63253123DF8D5400A77697 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		CD63253323DF8D7500A77697 /* CustomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioPlayer.swift; sourceTree = "<group>"; };
 		CD63253523DF8DAB00A77697 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		CD6365FA23E45C12009A53F3 /* erro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = erro.mp3; sourceTree = "<group>"; };
+		CD6365FB23E45C12009A53F3 /* acerto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = acerto.mp3; sourceTree = "<group>"; };
 		CD75B73923DF934A009059AD /* intro_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro_2.mp3; sourceTree = "<group>"; };
 		CD75B73A23DF934A009059AD /* loop_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop_1.mp3; sourceTree = "<group>"; };
 		CD75B73B23DF934A009059AD /* intro_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro_1.mp3; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 				CDEB061123E057070013021F /* sax */,
 				CD75B74123DF97C0009059AD /* trombone */,
 				CD75B73B23DF934A009059AD /* intro_1.mp3 */,
+				CD6365FB23E45C12009A53F3 /* acerto.mp3 */,
+				CD6365FA23E45C12009A53F3 /* erro.mp3 */,
 				CD75B73923DF934A009059AD /* intro_2.mp3 */,
 				CD75B73A23DF934A009059AD /* loop_1.mp3 */,
 				CD75B75423DF9AFE009059AD /* bateria.mp3 */,
@@ -457,6 +463,7 @@
 			files = (
 				CDEB063F23E057C50013021F /* trompa_G#2.mp3 in Resources */,
 				CDEB063223E057860013021F /* trompete_C#3.mp3 in Resources */,
+				CD6365FC23E45C12009A53F3 /* erro.mp3 in Resources */,
 				CDEB061E23E057130013021F /* sax_F#2.mp3 in Resources */,
 				CDEB061A23E057130013021F /* sax_E3.mp3 in Resources */,
 				CDB7D68123D735AB00180AAB /* Main.storyboard in Resources */,
@@ -481,6 +488,7 @@
 				CD75B75323DF9AF6009059AD /* caixa.mp3 in Resources */,
 				CDEB062123E057130013021F /* sax_A2.mp3 in Resources */,
 				CDEB064223E057C50013021F /* trompa_C#3.mp3 in Resources */,
+				CD6365FD23E45C12009A53F3 /* acerto.mp3 in Resources */,
 				CDEB064023E057C50013021F /* trompa_D#3.mp3 in Resources */,
 				CDEB062023E057130013021F /* sax_D#3.mp3 in Resources */,
 				CDB7D67823D735AB00180AAB /* GameScene.sks in Resources */,

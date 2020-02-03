@@ -9,15 +9,19 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import GameKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, GKGameCenterControllerDelegate {
+    
+    public var pontuacao = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            if let scene = SKScene(fileNamed: "GameScene") as? GameScene {
+                scene.gameControllerDelegate = self
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
@@ -32,6 +36,10 @@ class GameViewController: UIViewController {
         }
     }
 
+    func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController) {
+        gameCenterViewController.dismiss(animated: true, completion: nil)
+    }
+    
     override var shouldAutorotate: Bool {
         return true
     }
@@ -46,5 +54,17 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    
+}
+
+extension GameViewController: GameControllerDelegate {
+    func openMenu() {
+        print("abriu")
+        
+        if let vc = self.storyboard?.instantiateViewController(identifier: "menu") as? MenuViewController {
+            self.present(vc, animated: true, completion: nil)
+        }
     }
 }

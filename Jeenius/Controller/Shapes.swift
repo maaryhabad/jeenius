@@ -19,14 +19,37 @@ func createCircle() -> SKShapeNode {
     return circle
 }
 
-func createImgView() -> UIImageView {
-    let image = UIImage(named: "icone.png")
-    let imageView = UIImageView(image: image)
-    imageView.frame = CGRect(x: 160, y: 400, width: 100, height: 100)
-//    imageView.frame = CGRect(origin: CGPoint(), size: CGSize(width: 100, height: 100))
+func createInstrumentImgView() -> SKSpriteNode {
+    var player = SKSpriteNode()
     
-    return imageView
+    let image = UIImage(named: "icone.png")
+    let texture = SKTexture(image: image!)
+    player = SKSpriteNode(texture: texture)
+    player.position = CGPoint (x: 0, y: 0)
+    player.size = CGSize(width: 200, height: 200)
+    
+    return player
 }
+
+func createButtonPause() -> SKSpriteNode {
+    let button = SKSpriteNode(imageNamed: "pause.png")
+    
+    button.name = "btn"
+    button.size = CGSize(width: 100, height: 100)
+    button.position = CGPoint(x: 200, y: 500)
+    
+    return button
+}
+
+//func createInstrumentImgView() -> SKSpriteNode() {
+//
+////    imageView.frame = CGRect(x: 160, y: 400, width: 100, height: 100)
+////    imageView.frame = CGRect(origin: CGPoint(), size: CGSize(width: 100, height: 100))
+//
+////    return imageView
+//}
+
+
 
 
 
