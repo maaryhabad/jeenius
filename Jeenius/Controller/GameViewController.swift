@@ -64,7 +64,7 @@ extension GameViewController: GameControllerDelegate {
         print("abriu")
         
         if let vc = self.storyboard?.instantiateViewController(identifier: "menu") as? MenuViewController {
-            self.present(vc, animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }

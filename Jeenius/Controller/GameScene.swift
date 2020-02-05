@@ -55,6 +55,7 @@ class GameScene: SKScene {
         score.fontSize = 100
         score.zPosition = 10
         addChild(score)
+        addChild(pause)
         delay  = 0.0
         
         actionPlay()
@@ -156,11 +157,13 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if let name = pause.name {
-//            if name == "btn" {
-//                gameControllerDelegate?.openMenu()
-//            }
-//        }
+        
+        if let touch = touches.first {
+            let location = touch.location(in: self)
+            if pause.contains(location) {
+                gameControllerDelegate?.openMenu()
+            }
+        }
         
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
